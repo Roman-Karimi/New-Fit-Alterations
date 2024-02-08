@@ -1,66 +1,141 @@
-body {background-color: hsl(306, 30%, 74%);} 
-
-.img-fluid {position:relative;
-padding: 5px 5px 5px}
-
-h1 {
+body {
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .img-fluid {
+    position: fixed;
+    padding: 20px 10px;
+    z-index: 2;
+  }
+  
+  h1 {
+    width: 100%;
     position: absolute;
-    top: 1.7em;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    text-align: center;}
-h1:hover {text-decoration: underline;}
-h1 {line-height: 0.3;}
-h1 {transform:matrix(50px,50px)}
+    z-index: 2;
+    left: 174px;
+    top: 20px;
+    font-size: 50px;
+    color: black;
+    font-family: 'Avenir LT Pro';
+    font-weight: lighter;
+  }
+  
+@media screen and (max-width: 700px) {
+h1 {display: none;}
+.img-fluid {
+position: absolute;
+top: 3%; 
+left: 35%;}}
 
+hr {position:relative;
+  top: 110px;
+  height: 0px;
+  z-index: 3;
+  border-top: 2px solid #000000;
+  color: black;}
 
-select  {padding: 10px;
-font-size: 16px;
-border: 1px solid #ccc;
-border-radius: 4px;}
+div#six {
+position: absolute;
+z-index: 2;
+width: 100%;
+height: 150px;
+top: 0px;
+background-color: rgb(255, 255, 255);}
+  
+div#seven {
+position: absolute;
+width: 100%;
+height: 557px;
+top: 140px;
+background-color: hsl(306, 30%, 74%);
+z-index: -1;}
+  
+div#eight {
+position: absolute;
+width: 100%;
+height: 2583px;
+top: 697px;
+background-color: hsl(0, 0%, 100%);
+z-index: -1;}
+  
+div#nine {
+position: absolute;
+width: 100%;
+height: 496.05px;
+top: 2788px;
+background-color: hsl(306, 30%, 74%);
+z-index: -1;}
+  
+h2 {
+position: relative;
+top: 120px;
+z-index: 0;
+text-align: center;
+font-family: "Avenir LT Pro";
+font-size: 50px;
+color: black;
+font-weight: lighter;}
+  
+h3 {
+position: relative;
+text-align: center;
+z-index: 0;
+font-family: "Avenir LT Pro";
+font-size: 40px;
+color: black;
+font-weight: lighter;}
+  
+h4{
+position: relative;
+text-align: center;
+z-index: 0;
 
-select{ position: absolute;
-    top: 2em;
-    right: 2em;
-    width: relative;
-    margin: 0;
-    text-align: center;}
+font-family: 'Avenir LT Pro',;
+color: black; 
+font-weight: lighter;}
+    
+h5 {
+position: relative;
+text-align: center;
+bottom: 4px;
+font-family: 'Avenir LT Pro';
+font-weight: lighter;}
 
+h6 {
+position: relative;
+text-align: center;
+margin-bottom: 0;
+font-family: 'Avenir LT Pro';
+font-weight: lighter;}
 
-div {
-    position: top;
-    width: 100%;
-    height: 100px;
-    background-color: rgb(255, 255, 255);
-    margin: 10px 0;}
+p.one {
+position: relative;
+text-align: center;
+top: 2788;
+font-family: 'Avenir LT Pro';
+font-weight: lighter;}
 
+p.two {
+position: relative;
+text-align: center;
+font-family: 'Avenir LT Pro';
+font-weight: lighter;}
 
-h2 {text-align: center;}
-h2 {line-height: 0.3;}
+p.three {
+position: relative;
+left: 20px;
+text-align: center;
+font-family: 'Avenir LT Pro';
+font-weight: lighter;
+margin-top: 400px;}
 
-
-
-h3 {text-align: center;}
-h3 {line-height: 0.3;}
-
-
-h4 {text-align: center;}
-h4 {line-height: 1.0;}
-h4{margin: bottom;}
-h5 {text-align: center;}
-h5 {line-height: 0.3;}
-
-h6 {text-align: center;}
-h6 {line-height: 0.3;}
-
-
-
-
-p {text-align: center;} 
-p {line-height: 0.3;}
-p{
-    position: sticky;
-    bottom: 4
-}
-
+body {
+margin: 0;}
+  
+main {
+min-height: calc(300vh - 0rem);}
+  
+footer {
+height: 4rem;}
