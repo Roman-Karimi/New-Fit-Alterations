@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Thumbs Up Button</title>
+    <style>
+        /* Initial styling for the button */
+        .thumbs-up-button {
+            padding: 10px;
+            cursor: pointer;
+            transition: transform 0.5s ease-in-out, background-color 0.3s, color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Styling for the thumbs-up state */
+        .thumbs-up-button.thumbs-up {
+            background-color: green;
+            color: white;
+            transform: scale(1.2) rotate(360deg); /* Scale up and rotate when thumbs-up class is added */
+        }
+
+        /* Style for the thumbs-up icon */
+        .thumbs-up-icon {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="submitButton" class="thumbs-up-button" onclick="changeToThumbsUp()">
+        <span class="thumbs-up-icon">&#x1F44D;</span> SUBMIT
+    </button>
+
+    <script>
+        function changeToThumbsUp() {
+            var submitButton = document.getElementById('submitButton');
+            
+            // Toggle the 'thumbs-up' class to switch between states
+            submitButton.classList.toggle('thumbs-up');
+        }
+    </script>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.0178334727743!2d-0.4598401412623142!3d51.34758268938316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487675f8a3b07dc5%3A0xbc75e1c97889d121!2sDavid%20Lloyd%20Brooklands!5e0!3m2!1sen!2suk!4v1708545296647!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
