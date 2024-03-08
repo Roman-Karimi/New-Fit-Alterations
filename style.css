@@ -1,83 +1,70 @@
-body {
-  background-color: white;
+html, body {
+  width: 100%;
   margin: 0;
-  width: auto;
-  height: 100%;
-  z-index: -2;
-  font-family: 'Avenir LT Pro';
-overflow-x: hidden;
-}
+  padding: 0;
+  overflow-x: hidden;
+  z-index: -3;}
 
 #header {
+display: flex;
+justify-content: center;
 z-index: 1;
 width: 100%;
 height: 150px;
-background-color: rgb(226, 216, 165);}
-.logo {
+background-color: rgb(226, 216, 165);
+top: 0;}
+#logo {
 z-index: 1;
 height: 100px;
-position: absolute;
-padding: 15px;
-padding-bottom: 35px;
-padding-left: 50px;}
-
+width: 153px;
+left: 20px;
+top: 20px;
+position: absolute;}
+#refresh {width: 150px;
+left: 0px;}
 #businessname {
-position: relative;
-text-align: center;
-margin-top: 0px;
-margin-bottom: 0px;
+position: absolute;
+margin: 0px;
 z-index: 1;
 font-size: 65px;
 color: black;
 font-weight: lighter;
-padding-top: 40px;
-
-
-}  
+padding-top: 50px;
+width: 700px;}  
 #mainline {
 position: absolute;
 width: 100%;
 margin: 0px;
 height: 0px;
 z-index: 2;
-border-top: px solid black;
-border-color: black;
-}
-#refresh {width: 150px;
-left: 0px;}
-
+top: 115px;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+border-color: black;}
 
 #heroimage {
-  width: 100%;
-  height: 547px;
-  background-size: cover;
-  background-image: url(Images/debby-hudson-1eV-OecIKgI-unsplash.jpg);
-  opacity: 0.5;
-  background-attachment: fixed;
-
-}
-
+width: 100%;
+height: 60vh;
+background-size: cover;
+background-image: url(Images/debby-hudson-1eV-OecIKgI-unsplash.jpg);
+opacity: 0.5;
+background-attachment: fixed;}
 #herotextbox {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -80%);
-  width: 570px;
-  opacity: 1;
-  z-index: 2;
-}
-
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -80%);
+width: px;
+opacity: 1;
+z-index: 2;
+width: 100%;}
 #herotext {
-  position: relative;
-  margin: 0px;
-  text-align: center;
-  font-size: 50px;
-  color: black;
-  font-weight: lighter;
-  opacity: 1;
-}
-
-
+position: relative;
+margin: 0px;
+text-align: center;
+font-size: 50px;
+color: black;
+font-weight: lighter;} 
 #mainbody {
 width: 100%;
 height: 1770px;
@@ -96,33 +83,30 @@ background-color: rgb(226, 216, 165);
 ;
 margin-bottom: 30px;}
 #providinglist {
-width: 1000px;
 text-align: center;
 z-index: 0;
 font-size: 30px;
 color: black;
 font-weight: lighter;
-margin: 0px;
-}
+margin: 0px;}
 
 #strap2 {
+display:flex;
+justify-content: center; /* Center children horizontally */
+align-items: center; /* Center children vertically */
 width: 50%;
 height: 555px;
-display: flex;
-justify-content: center;
-align-items: center;
-z-index: 0;
 margin-top: 30px;
 margin-bottom: 30px;
 background-color: rgb(226, 216, 165);}
-#openinghrs{
-text-align: center;
+#openinghrs {
 width: 400px;
-margin: 0px;
 z-index: 1;
-color: black; 
+color: black;
 font-weight: lighter;
-font-size: 30px;}
+font-size: 30px;
+text-align: center;
+margin: 0px;}
 #storefrontphoto {
 position: absolute;
 right: 0px;
@@ -144,7 +128,6 @@ z-index: 0;
 background-color: rgb(226, 216, 165);
 margin-top: 30px;
 margin-bottom: 30px;}
-
 .contact-form {
 flex-direction: column;
 align-items: start;
@@ -160,8 +143,7 @@ font-weight: lighter;
 font-size: 25px;
 align-items: center;
 text-align: center;}
-input,
-textarea {
+input,textarea {
 width: 100%;
 padding: 8px;
 margin-bottom: 16px;
@@ -183,44 +165,6 @@ margin: auto;
 font-family: 'Avenir LT Pro'}
 button:hover {
 background-color: rgb(149, 142, 109)}
-p.one {
-position: relative;
-left: -40px;
-top: 10%;
-text-align: center;
-font-weight: lighter;
-margin: 0px;
-font-size: 25px;
-}
-
-p.address {
-  margin: 0px;
-  left: 50%;
-  top: 30%;
-  transform: translateY(25px);
-  text-align: center;
-  font-weight: lighter;
-  font-size: 25px;
-}
-
-#GoogleMaps {
-  margin-top: auto;
-  transform: translateX(-50px);
-  margin: 50px;
-  width: 100%;
-  height: 280px;
-  border: 0px solid black;
-}
-
-p.info-nfa {
-  left: 50%;
-  text-align: center;
-  font-weight: lighter;
-  transform: translateY(-35%);
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
 
 #footer {
 width: 100%;
@@ -228,74 +172,116 @@ height: 496.05px;
 top: 3290px;
 background-color: rgb(226, 216, 165);
 z-index: -1;
+text-align: center;}
+#address {
+margin: 0px;
+left: 50%;
+top: 30%;
+transform: translateY(25px);
 text-align: center;
-}
+font-weight: lighter;
+font-size: 25px;}
+#GoogleMaps {
+margin-top: auto;
+transform: translateX(-50px);
+margin: 50px;
+width: 100%;
+height: 280px;
+border: 0px solid black;}
+#info-nfa {
+left: 50%;
+text-align: center;
+font-weight: lighter;
+transform: translateY(-35%);
+margin: 0px;
+padding-bottom: 1px;}
 
-@media screen and (max-width: 1150px) {
-  h1 {
-  display: none;}
 
-  #refresh {height: 100px;}
+@media only screen and (max-width: 1110px){
+#businessname{visibility: hidden;} 
+#logo{left: 50%;
+transform: translatex(-70px);}
+#storefrontphoto{visibility: hidden;}
+#strap2,#strap3{width: 100%;}
+#providinglist{font-size: 25px;}
+#strap2{display: relative;}}
 
-  #header{display: flex;
-  justify-content: center;}
+@media only screen and (max-width: 623px){
+#businessname{visibility: hidden;} 
+#logo{left: 50%;
+  transform: translatex(-70px);}
+#storefrontphoto{visibility: hidden;}
+#strap2,#strap3{width: 100%;}
+#providinglist{font-size: 25px;}
+#strap2{display: relative;}
+#address{font-size: 20px}}
 
-  .logo{ padding: 0px;
-  padding-top: 15px;
- padding-bottom: 35px;}
+@media only screen and (max-width: 425px){
+#businessname{visibility: hidden;} 
+#logo{left: 50%;
+  transform: translatex(-70px);}
+#storefrontphoto{visibility: hidden;}
+#strap2,#strap3{width: 100%;}
+#providinglist{font-size: 22px;}
+#strap2{display: relative;}
+#address{font-size: 20px}}
 
-  #mainline {position: absolute;
-  z-index: 3;
-  top: 117px;}
-  
-  #storefrontphoto {
-  display: none;}
-   
-  #ourteen {
-  width: 100%;}
-   
-  h4 {
-  position: relative;}
-  
-  #strap2{
-  width: 100%;}
-  
-  #strap3{
-  width: 100%;}
+@media only screen and (max-width: 430px){
+html, body {
+width: 100%;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+z-index: -3;}
+#businessname{visibility: hidden;}
+#heroimage{
+width: 100%;
+height: 60vh;
+background-size: cover;
+background-image: url(Images/debby-hudson-1eV-OecIKgI-unsplash.jpg);
+opacity: 0.5;
+background-attachment: local;}
+#info-nfa {
+left: 50%;
+text-align: center;
+font-weight: lighter;
+transform: translateY(-45%);
+margin: 0px;
+padding-bottom: 1px;}}
 
- #providinglist{font-size: 25px;
-margin-left: 5px;
-margin-right: 5px;
-width: 700px;}
+@media only screen and (max-width: 375px){
+#businessname{visibility: hidden;}
+#heroimage{
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-image: url(Images/debby-hudson-1eV-OecIKgI-unsplash.jpg);
+    opacity: 0.5;
+    background-attachment: local;}
+#info-nfa {
+left: 50%;
+text-align: center;
+font-weight: lighter;
+transform: translateY(-45%);
+margin: 0px;
+padding-bottom: 1px;}
+#providinglist{font-size: 22px;}}
 
- p.address{font-size: 15px;}
-
- #heroimage {
-  background-image: url("Images/Capture.PNG");
-  width: 100%;
-  height: 547px;
-  background-size: cover;
-  opacity: 0.5;
-  background-attachment: fixed;
-background-position-y: -100px;}
-}
-
-@media screen and (max-width: 592px){
-#herotext{width:300px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 10%);
-  text-align: center;
-
-}
-#heroimage {
-  background-image: url("Images/Capture.PNG");
-  width: 100%;
-  height: 547px;
-  background-size: cover;
-  opacity: 0.5;
-  background-attachment: fixed;
-background-position-y: -100px;
-background-position-x: -100px;}
-
-}
+@media only screen and (max-width: 320px){
+#businessname{visibility: hidden;}
+#heroimage{
+width: 100%;
+height: 60vh;
+background-size: cover;
+background-image: url(Images/debby-hudson-1eV-OecIKgI-unsplash.jpg);
+opacity: 0.5;
+background-attachment: local;}
+#info-nfa {
+left: 50%;
+text-align: center;
+font-weight: lighter;
+transform: translateY(-70%);
+font-size: 10px;
+margin: 0px;
+padding-bottom: 1px;}
+#providinglist{font-size: 20px;}}
