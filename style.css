@@ -333,3 +333,32 @@ font-size: 15px;
 margin: 0px;
 padding-bottom: 1px;}
 #providinglist{font-size: 19px;}}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2){
+  #header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(226, 216, 165);
+  position: static;
+  top: 0;}
+  #businessname{display: none;font-size: 10px;} 
+  #heroimage{
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-image: url(Images/debby-hudson-1eV-OecIKgI-unsplash.jpg);
+  opacity: 0.5;
+  background-attachment: local;}
+  #info-nfa {
+  left: 50%;
+  text-align: center;
+  font-weight: lighter;
+  transform: translateY(-50%);
+  font-size: 15px;
+  margin: 0px;
+  padding-bottom: 1px;}
+  #providinglist{font-size: 19px;}}
